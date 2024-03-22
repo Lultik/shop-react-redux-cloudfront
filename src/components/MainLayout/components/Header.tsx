@@ -13,7 +13,7 @@ import Link from "@mui/material/Link";
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
-  const auth = true;
+  const auth = false;
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -81,7 +81,7 @@ export default function Header() {
             </Menu>
           </div>
         )}
-        <Cart />
+        {/*<Cart />*/}
       </Toolbar>
     </AppBar>
   );
